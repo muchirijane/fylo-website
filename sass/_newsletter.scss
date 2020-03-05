@@ -1,0 +1,61 @@
+.newsletter{
+    background-color: $color-main;
+
+    grid-column: col-start 2/ col-end 7;
+    padding: 3rem 5rem;
+    text-align: center;
+    font-size: 1.6rem;
+    border-radius: .8rem;
+    box-shadow: 0 4px 8px $color-footer;
+    position: relative;
+    bottom: -10rem;
+
+    &__title{
+
+    }
+
+    &__text{
+        font-size: 1.5rem;
+        padding: 0 2rem;
+    }
+
+    &__subscribe{
+        margin-top: 3rem;
+        display: flex;
+
+        @media only screen and (max-width: $bp-sm-mobile){
+            flex-direction: column;
+        }
+
+        &-input{
+         border: 0;
+         outline: none;
+         background-color:#fff;
+         padding: 2rem 0;
+         padding-right: 25rem;
+         padding-left: 2rem;
+          border-radius: 4rem;
+          margin-right: auto;
+
+          @media only screen and (max-width: $bp-sm-tablet){
+            padding-right: 15rem;
+          }
+          @media only screen and (max-width: $bp-mobile){
+            padding-right: 8rem;
+            margin-right: 2rem;
+          }
+
+          @media only screen and (max-width: $bp-sm-mobile){
+            margin-bottom: 3rem
+          }
+        }
+
+    }
+
+    &__cta{
+
+        @include cta-btn(0, 0, 2rem 4rem, 1.5rem);
+        
+    }
+
+}

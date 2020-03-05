@@ -1,0 +1,57 @@
+.header{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    
+    margin-bottom: 10rem;
+    font-size: 2rem;
+
+    background-color: $color-intro;
+    background-size: 100%;
+    background-image: url(../img/bg-curvy-desktop.svg);
+    width: 100%;
+    height: 113rem;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+
+
+    &__item{
+        text-align: center;
+        margin: auto;
+        width: 50%;
+
+        @media only screen and (max-width: $bp-sm-mobile){
+            width: 80%;
+        }
+
+    }
+
+    &__image{
+        height: 40rem;
+        
+    }
+    &__title{
+        padding-bottom: 5rem;
+        @media only screen and (max-width: $bp-tablet){
+            font-size: 3.5rem;
+        }
+    }
+
+    &__text{
+        padding: 0 10rem;
+
+        @media only screen and (max-width: $bp-tablet){
+            padding: 0 4rem;
+        }
+    }
+}
+
+.cta{
+
+    @include cta-btn(10rem, 4rem, 2rem 8rem, 1.8rem);
+        
+
+    
+
+    
+}
+

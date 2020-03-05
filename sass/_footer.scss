@@ -1,0 +1,57 @@
+.footer{
+    background-color: $color-footer;
+
+    grid-column: 1/-1;
+    padding: 4rem;
+    padding-top: 15rem;
+
+
+    &__logo{
+
+    }
+
+    &__detail{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+        grid-row-gap: 2rem;
+        justify-items: center;
+        padding-top: 4rem;
+
+    }
+
+    &__location{
+        display: flex;
+    }
+
+    &__contact{
+        display: flex;
+        padding-bottom: 2rem;
+    }
+
+    &__item{
+
+    }
+
+    &__icon{
+        padding-right: 2rem;
+        height: 2rem;
+
+    }
+
+    &__info{
+        padding-bottom: 2rem;
+        cursor: pointer;
+    }
+}
+
+.fab{
+    padding: 1.4rem;
+    border: 1px solid$color-white;
+    border-radius: 50%;
+    margin-right: 2rem;
+
+    &:hover{
+        color: $color-footer;
+        background-color: $color-white;
+    }
+}

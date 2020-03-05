@@ -1,0 +1,23 @@
+@mixin cta-btn ($margin-bottom,$margin-top,$padding,$font-size) {
+    font-family: 'raleway', sans-serif;
+
+    margin-bottom: $margin-bottom;
+    margin-top: $margin-top;
+    padding: $padding;
+    border: 0;
+    outline: none;
+    border-radius: 3rem;
+    background-image: linear-gradient(to right, $color-cyan, $color-blue);
+    color:$color-white;
+    font-size: $font-size;
+    font-weight: 700;
+    transition: all .2s;
+
+    &:hover{
+        background-image: linear-gradient(to left, $color-cyan, $color-blue);
+    }
+
+    &:active{
+        transform: translateY(1rem);
+    }
+}

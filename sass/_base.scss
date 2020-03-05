@@ -1,0 +1,68 @@
+
+//COLORS
+$color-intro: hsl(217, 28%, 15%);
+$color-main: hsl(218, 28%, 13%);
+$color-footer: hsl(216, 53%, 9%);
+$color-testimonials: hsl(219, 30%, 18%);
+
+$color-cyan: hsl(176, 68%, 64%);
+$color-blue: hsl(198, 60%, 50%);
+
+$color-white: hsl(0, 0%, 100%);
+
+//Breaking points
+$bp-desktop: 75em; //1200px
+$bp-laptop: 62.5em; //1000px
+$bp-tablet: 56.25em; //900px
+$bp-sm-tablet: 48.44em; //775px
+$bp-tab: 41.25em; //500px
+$bp-mobile: 56.25em; //425px
+$bp-sm-mobile: 20em;
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%; // 10/16rem = 62.5%  1200px - 50%
+    box-sizing: border-box;
+
+    @media only screen and (max-width: $bp-desktop){
+        font-size: 50%;
+    }
+    @media only screen and (max-width: $bp-laptop){
+        font-size: 45%;
+    }
+    @media only screen and (max-width: $bp-sm-tablet){
+        font-size: 40%;
+    }
+    @media only screen and (max-width: $bp-tab){
+        font-size: 30%;
+    }
+}
+
+body{
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    
+    
+    line-height: 1.6;
+    font-weight: 400;
+    color: $color-white;
+    background-color: $color-main;
+}
+
+.container{
+    display: grid;
+
+    grid-template-rows:  90vh min-content 40vw repeat(3, min-content);
+   
+    grid-template-columns:[full-start] minmax(6rem, 1fr)[center-start] repeat(8,[col-start] minmax(min-content, 14rem) [col-end] )[center-end]  minmax(6rem, 1fr)[full-end];
+}
+
+
+

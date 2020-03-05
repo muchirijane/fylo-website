@@ -1,0 +1,65 @@
+.about{
+
+    grid-column: center-start/ center-end;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    align-items: center;
+
+    @media only screen and (max-width: $bp-tab){
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20rem
+    }
+
+    &__image{
+        height: 42rem;
+
+        @media only screen and (max-width: $bp-laptop){
+            height: 38rem;
+        }
+        @media only screen and (max-width: $bp-sm-mobile){
+            margin-bottom: 10rem;
+        }
+
+    }
+
+    &__details{
+        padding: 0 4rem;
+        margin-left: 4rem;
+
+        @media only screen and (max-width: $bp-sm-tablet){
+            padding: 0;
+        }
+
+    }
+
+    &__heading{
+        padding-bottom: 2rem;
+
+    }
+
+    &__text{
+
+        &:not(:last-child){
+            padding-bottom: 2rem;
+        }
+
+    }
+}
+
+.btn{
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    color: $color-cyan;
+    border-bottom: 2px solid currentColor;
+
+    padding-bottom: .8rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+
+    &:hover{
+
+    }
+}
